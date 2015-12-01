@@ -1,0 +1,221 @@
+﻿@import "_mixin";
+@import "_fonts";
+@import "_vars";
+
+/* clear the default browser styles */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal; }
+
+button, input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+#container {
+  display: table;
+  #sidebar {
+    display: table-cell;
+    vertical-align: top;
+    width: 365px;
+    background: url("../images/backgr_sidebar.png") repeat;
+    font-family: "UbuntuLight";
+    .profile {
+      position: relative;
+      width: 220px;
+      height: 48px;
+      border-radius: $border-radius;
+      @include gradient(top, $color_light_green, $color_dark_green);
+      margin: 20px 20px;
+      img {
+        margin: 10px 0 10px 10px;
+      }
+      span {
+        font-size: 12px;
+        font-weight: bold;
+        color: $color_white;
+        padding-left: 7px;
+        cursor: pointer;
+      }
+      .drop_down {
+        position: absolute;
+        width: 10px;
+        height: 8px;
+        top: 20px;
+        right: 14px;
+        background: url("../images/images_together.png") -62px 0 no-repeat;
+      }
+    }
+    .profile_info {
+      ul {
+        li {
+          list-style: none;
+          display: block;
+          height: 35px;
+          width: 240px;
+          border-radius: $border-radius;
+          @include gradient(top, $color_light_black, $color_black);
+          margin-bottom: 15px;
+          a {
+            font-size: 13px;
+            font-family: "UbuntuMedium";
+            text-transform: uppercase;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            color: $color_white;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  #main {
+    padding: 20px 50px 50px 50px;
+    font-family: "UbuntuLight";
+    display: table-cell;
+    .header {
+      height: 75px;
+      background: url("../images/My-group-purchases.png") no-repeat;
+      input[type="text"] {
+        width: 325px;
+        height: 32px;
+        color: $color_gray;
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 10px;
+        float: right;
+      }
+      button {
+        float: right;
+        @include gradient(top, $color_light_green, $color_dark_green);
+        padding: 5px 18px 5px 10px;
+        color: $color_white;
+        text-transform: uppercase;
+        margin-left: 10px;
+        text-align: center;
+        border: 1px solid $color_light_green;
+        border-radius: $border-radius;
+        img {
+          margin-right: 7px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .main_info {
+      padding-bottom: 50px;
+      border-top: 2px solid $color_light_green;
+      background-color: $color_light_gray;
+     // background-color: #edf0e1;
+      h1 {
+        text-transform: uppercase;
+        font-size: 18px;
+        padding: 15px 0 25px 15px;
+        font-weight: bold;
+      }
+      .introd {
+        padding: 25px 0 0 25px;
+        margin: 0 7px;
+        background-color: $color_white;
+        h2 {
+          font-size: 18px;
+          font-weight: bold;
+          color: $color_middle_black;
+          margin: 0 0 8px 0;
+        }
+        p {
+          font-size: 14px;
+          line-height: 14px;
+          color: $color_middle_black;
+          margin: 0;
+        }
+      }
+      .voting, .collect_offers, .collect_participants {
+        margin: 0 7px;
+        padding-top: 27px;
+        background-color: $color_white;
+        h3 {
+          font-size: 13px;
+          color: $color-dark_gray;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin: 0 0 10px 10px;
+        }
+        table.table {
+          padding: 0;
+          margin: 0;
+          font-family: "UbuntuRegular";
+          thead {
+            @include gradient(top, $color_light_green, $color_dark_green);
+            th {
+              font-size: 13px;
+              color: $color_white;
+              text-align: center;
+            }
+          }
+          tbody {
+            tr {
+              color: $color-dark_gray;
+              font-size: 13px;
+            }
+            td {
+              text-align: center;
+              vertical-align: middle;
+            }
+            td:first-child {
+              text-align: left;
+              padding-left: 20px;
+            }
+            tr.active, tr:hover {
+              background-color: $color_middle_gray;
+              font-weight: bold;
+            }
+            td.voting_status {
+              width: 100px;
+              vertical-align: middle;
+              padding-left: 45px;
+              div.square {
+                background: url(../images/images_together.png) -31px 0px no-repeat;
+                width: 13px;
+                height: 13px;
+              }
+            }
+            td.details {
+              width: 100px;
+              vertical-align: middle;
+              padding-left: 45px;
+              div.search {
+                background: url(../images/images_together.png) -14px 0px no-repeat;
+                width: 17px;
+                height: 16px;
+              }
+            }
+            td.remove {
+              width: 100px;
+              vertical-align: middle;
+              padding-left: 45px;
+              div.button_close {
+                background: url(../images/images_together.png) 0 0 no-repeat;
+                width: 14px;
+                height: 14px;
+              }
+            }
+          }
+        }
+      }
+      .first_table {
+        padding-top: 50px;
+      }
+      div.collect_participants {
+        padding-bottom: 100px;
+      }
+    }
+  }
+}
+

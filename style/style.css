@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "UbuntuLight";
+  src: url("../fonts/UbuntuLight/UbuntuLight.eot");
+  src: url("../fonts/UbuntuLight/UbuntuLight.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuLight/UbuntuLight.woff") format("woff"), url("../fonts/UbuntuLight/UbuntuLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "UbuntuRegular";
+  src: url("../fonts/UbuntuRegular/UbuntuRegular.eot");
+  src: url("../fonts/UbuntuRegular/UbuntuRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuRegular/UbuntuRegular.woff") format("woff"), url("../fonts/UbuntuRegular/UbuntuRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "UbuntuMedium";
+  src: url("../fonts/UbuntuMedium/UbuntuMedium.eot");
+  src: url("../fonts/UbuntuMedium/UbuntuMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuMedium/UbuntuMedium.woff") format("woff"), url("../fonts/UbuntuMedium/UbuntuMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* clear the default browser styles */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal; }
+
+button, input {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+body {
+  margin: 0; }
+
+#container {
+  display: table; }
+  #container #sidebar {
+    display: table-cell;
+    vertical-align: top;
+    width: 365px;
+    background: url("../images/backgr_sidebar.png") repeat;
+    font-family: "UbuntuLight"; }
+    #container #sidebar .profile {
+      position: relative;
+      width: 220px;
+      height: 48px;
+      border-radius: 3px;
+      background: -webkit-linear-gradient(top, #95b361, #52701e);
+      background: -moz-linear-gradient(top, #95b361, #52701e);
+      background: -ms-linear-gradient(top, #95b361, #52701e);
+      margin: 20px 20px; }
+      #container #sidebar .profile img {
+        margin: 10px 0 10px 10px; }
+      #container #sidebar .profile span {
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        padding-left: 7px;
+        cursor: pointer; }
+      #container #sidebar .profile .drop_down {
+        position: absolute;
+        width: 10px;
+        height: 8px;
+        top: 20px;
+        right: 14px;
+        background: url("../images/images_together.png") -62px 0 no-repeat; }
+    #container #sidebar .profile_info ul li {
+      list-style: none;
+      display: block;
+      height: 35px;
+      width: 240px;
+      border-radius: 3px;
+      background: -webkit-linear-gradient(top, #282828, #020202);
+      background: -moz-linear-gradient(top, #282828, #020202);
+      background: -ms-linear-gradient(top, #282828, #020202);
+      margin-bottom: 15px; }
+      #container #sidebar .profile_info ul li a {
+        font-size: 13px;
+        font-family: "UbuntuMedium";
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        margin-left: 20px; }
+  #container #main {
+    padding: 20px 50px 50px 50px;
+    font-family: "UbuntuLight";
+    display: table-cell; }
+    #container #main .header {
+      height: 75px;
+      background: url("../images/My-group-purchases.png") no-repeat; }
+      #container #main .header input[type="text"] {
+        width: 325px;
+        height: 32px;
+        color: #999999;
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 10px;
+        float: right; }
+      #container #main .header button {
+        float: right;
+        background: -webkit-linear-gradient(top, #95b361, #52701e);
+        background: -moz-linear-gradient(top, #95b361, #52701e);
+        background: -ms-linear-gradient(top, #95b361, #52701e);
+        padding: 5px 18px 5px 10px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-left: 10px;
+        text-align: center;
+        border: 1px solid #95b361;
+        border-radius: 3px; }
+        #container #main .header button img {
+          margin-right: 7px;
+          vertical-align: middle; }
+    #container #main .main_info {
+      padding-bottom: 50px;
+      border-top: 2px solid #95b361;
+      background-color: #edf0e1; }
+      #container #main .main_info h1 {
+        text-transform: uppercase;
+        font-size: 18px;
+        padding: 15px 0 25px 15px;
+        font-weight: bold; }
+      #container #main .main_info .introd {
+        padding: 25px 0 0 25px;
+        margin: 0 7px;
+        background-color: #ffffff; }
+        #container #main .main_info .introd h2 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #1c1c1c;
+          margin: 0 0 8px 0; }
+        #container #main .main_info .introd p {
+          font-size: 14px;
+          line-height: 14px;
+          color: #1c1c1c;
+          margin: 0; }
+      #container #main .main_info .voting, #container #main .main_info .collect_offers, #container #main .main_info .collect_participants {
+        margin: 0 7px;
+        padding-top: 27px;
+        background-color: #ffffff; }
+        #container #main .main_info .voting h3, #container #main .main_info .collect_offers h3, #container #main .main_info .collect_participants h3 {
+          font-size: 13px;
+          color: #313131;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin: 0 0 10px 10px; }
+        #container #main .main_info .voting table.table, #container #main .main_info .collect_offers table.table, #container #main .main_info .collect_participants table.table {
+          padding: 0;
+          margin: 0;
+          font-family: "UbuntuRegular"; }
+          #container #main .main_info .voting table.table thead, #container #main .main_info .collect_offers table.table thead, #container #main .main_info .collect_participants table.table thead {
+            background: -webkit-linear-gradient(top, #95b361, #52701e);
+            background: -moz-linear-gradient(top, #95b361, #52701e);
+            background: -ms-linear-gradient(top, #95b361, #52701e); }
+            #container #main .main_info .voting table.table thead th, #container #main .main_info .collect_offers table.table thead th, #container #main .main_info .collect_participants table.table thead th {
+              font-size: 13px;
+              color: #ffffff;
+              text-align: center; }
+          #container #main .main_info .voting table.table tbody tr, #container #main .main_info .collect_offers table.table tbody tr, #container #main .main_info .collect_participants table.table tbody tr {
+            color: #313131;
+            font-size: 13px; }
+          #container #main .main_info .voting table.table tbody td, #container #main .main_info .collect_offers table.table tbody td, #container #main .main_info .collect_participants table.table tbody td {
+            text-align: center;
+            vertical-align: middle; }
+          #container #main .main_info .voting table.table tbody td:first-child, #container #main .main_info .collect_offers table.table tbody td:first-child, #container #main .main_info .collect_participants table.table tbody td:first-child {
+            text-align: left;
+            padding-left: 20px; }
+          #container #main .main_info .voting table.table tbody tr.active, #container #main .main_info .voting table.table tbody tr:hover, #container #main .main_info .collect_offers table.table tbody tr.active, #container #main .main_info .collect_offers table.table tbody tr:hover, #container #main .main_info .collect_participants table.table tbody tr.active, #container #main .main_info .collect_participants table.table tbody tr:hover {
+            background-color: #e5e5e5;
+            font-weight: bold; }
+          #container #main .main_info .voting table.table tbody td.voting_status, #container #main .main_info .collect_offers table.table tbody td.voting_status, #container #main .main_info .collect_participants table.table tbody td.voting_status {
+            width: 100px;
+            vertical-align: middle;
+            padding-left: 45px; }
+            #container #main .main_info .voting table.table tbody td.voting_status div.square, #container #main .main_info .collect_offers table.table tbody td.voting_status div.square, #container #main .main_info .collect_participants table.table tbody td.voting_status div.square {
+              background: url(../images/images_together.png) -31px 0px no-repeat;
+              width: 13px;
+              height: 13px; }
+          #container #main .main_info .voting table.table tbody td.details, #container #main .main_info .collect_offers table.table tbody td.details, #container #main .main_info .collect_participants table.table tbody td.details {
+            width: 100px;
+            vertical-align: middle;
+            padding-left: 45px; }
+            #container #main .main_info .voting table.table tbody td.details div.search, #container #main .main_info .collect_offers table.table tbody td.details div.search, #container #main .main_info .collect_participants table.table tbody td.details div.search {
+              background: url(../images/images_together.png) -14px 0px no-repeat;
+              width: 17px;
+              height: 16px; }
+          #container #main .main_info .voting table.table tbody td.remove, #container #main .main_info .collect_offers table.table tbody td.remove, #container #main .main_info .collect_participants table.table tbody td.remove {
+            width: 100px;
+            vertical-align: middle;
+            padding-left: 45px; }
+            #container #main .main_info .voting table.table tbody td.remove div.button_close, #container #main .main_info .collect_offers table.table tbody td.remove div.button_close, #container #main .main_info .collect_participants table.table tbody td.remove div.button_close {
+              background: url(../images/images_together.png) 0 0 no-repeat;
+              width: 14px;
+              height: 14px; }
+      #container #main .main_info .first_table {
+        padding-top: 50px; }
+      #container #main .main_info div.collect_participants {
+        padding-bottom: 100px; }
+
+/*# sourceMappingURL=style.css.map */
